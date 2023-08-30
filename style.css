@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary */
+    --light-red: hsl(356, 100%, 66%);
+    --very-light-red: hsl(355, 100%, 74%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+
+    /* Neutral */
+    --white: #fff;
+    --grayish-blue: hsl(240, 2%, 79%);
+    --very-dark-grayish-blue: hsl(207, 13%, 34%);
+    --very-dark-black-blue: hsl(240, 10%, 16%);
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+button{
+    color: var(--white);
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+body{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    width: 100vw;
+    height: 60vh;
+
+    color: var(--white);
+
+    border-bottom-left-radius: 15%;
+
+    background-image: url('/images/bg-pattern-intro-desktop.svg'), linear-gradient(to right, var(--very-light-red), var(--light-red));
+    background-size: 200rem;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+}
+
+.header .nav{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100vw;
+}
+
+.nav-option-button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-option-button button{
+    font-size: 1.8rem;
+}
+
+.nav-entry{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.8rem;
+}
+
+.nav-entry a{
+    padding: 1rem;
+}
+
+.signup{
+    color: var(--light-red);
+    border-radius: 50rem;
+    background-color: #fff;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.heading-main{
+    font-size: 6rem;
+}
+
+.heading-paragraph{
+    font-size: 2rem;
+}
+
+.heading-cta{
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.heading-cta button{
+    font-size: 2rem;
+    border: #fff solid 2px;
+    padding: 1.25rem;
+    border-radius: 50rem;
+}
+
+.cta-start{
+    background: #fff;
+    color: var(--light-red);
+}
